@@ -1,0 +1,6 @@
+{
+  "name": "UX Roaster",
+  "description": "Evaluate individual interfaces, live web pages, or end-to-end user journeys: delivering actionable usability insights, WCAG contrast verification, and an interactive Visual Error Spotlight.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

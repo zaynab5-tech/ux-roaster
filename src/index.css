@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'DM Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    color: #16142C;
+    background-color: #ECE9FE;
+    color-scheme: light;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, code, pre, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Luminous periwinkle-to-lavender SaaS backdrop */
+.lavender-ambient-bg {
+  background: linear-gradient(180deg, #FFFFFF 0%, #ECE9FE 55%, #B8A9FA 100%);
+}
+
+/* Soft frosted canvas for screenshot inspection stage */
+.inspector-stage-bg {
+  background: radial-gradient(circle at 30% 20%, #FFFFFF 0%, #F3F0FF 55%, #E6E0FD 100%);
+}
+
+/* Crisp elevated white card over lavender ambient background */
+.saas-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #D8D4F2;
+  box-shadow:
+    0 10px 30px -10px rgba(91, 61, 245, 0.09),
+    0 2px 6px 0 rgba(22, 20, 44, 0.03);
+}
+
+/* Tracked micro-label utility */
+.micro-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Clean custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(236, 233, 254, 0.45);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C7BFF2;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9E92E5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
